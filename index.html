@@ -4,70 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Brutalist Design</title>
+    <title>Portfolio - Selected Works</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Lenis CSS (Recommended for Lenis) -->
+    <style>
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+
+        .lenis.lenis-scrolling iframe {
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">PORTFOLIO</div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
 
-    <main>
-        <section class="hero">
-            <h1>
-                PRETTY IS GOOD & UGLY IS TOO, AS LONG AS IT HAS MEANING. MY PURPOSE IS TO FIND IT.
-            </h1>
-        </section>
+    <!-- Smooth Scroll Wrapper -->
+    <div class="smooth-wrapper">
+        <div class="smooth-content">
 
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <span>BRAND STRATEGY &rarr; BRAND DESIGN &rarr; ART DIRECTION &nbsp;&nbsp;&nbsp; BRAND STRATEGY &rarr;
-                    BRAND DESIGN &rarr; ART DIRECTION &nbsp;&nbsp;&nbsp; BRAND STRATEGY &rarr; BRAND DESIGN &rarr; ART
-                    DIRECTION &nbsp;&nbsp;&nbsp;</span>
-                <span>BRAND STRATEGY &rarr; BRAND DESIGN &rarr; ART DIRECTION &nbsp;&nbsp;&nbsp; BRAND STRATEGY &rarr;
-                    BRAND DESIGN &rarr; ART DIRECTION &nbsp;&nbsp;&nbsp; BRAND STRATEGY &rarr; BRAND DESIGN &rarr; ART
-                    DIRECTION &nbsp;&nbsp;&nbsp;</span>
-            </div>
-        </div>
+            <header>
+                <div class="logo">HERMANSYAH<br>ADIKA PUTRA</div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="work.html" class="nav-link">Work</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <section id="work" class="selected-works">
-            <a href="project.html" class="project-row">
-                <span class="project-name">Beermut</span>
-                <span class="project-type">Brand Identity</span>
-            </a>
-            <a href="project.html" class="project-row">
-                <span class="project-name">Body Om</span>
-                <span class="project-type">Packaging</span>
-            </a>
-            <a href="project.html" class="project-row">
-                <span class="project-name">Fapro</span>
-                <span class="project-type">Web Design</span>
-            </a>
-        </section>
-    </main>
+            <main>
+                <section class="hero">
+                    <div class="hero-text">
+                        <div class="reveal-wrapper">
+                            <h1 class="reveal-text">PRETTY IS GOOD</h1>
+                        </div>
+                        <div class="reveal-wrapper">
+                            <h1 class="reveal-text">& UGLY IS TOO</h1>
+                        </div>
+                        <div class="reveal-wrapper">
+                            <h1 class="reveal-text">AS LONG AS IT</h1>
+                        </div>
+                        <div class="reveal-wrapper">
+                            <h1 class="reveal-text">HAS MEANING.</h1>
+                        </div>
+                    </div>
+                </section>
 
-    <footer id="contact">
-        <div class="footer-cta">
-            <h2>LET'S WORK TOGETHER</h2>
-            <a href="mailto:hermansyah.ap@gmail.com" class="footer-email">hermansyah.ap@gmail.com</a>
-        </div>
-        <div class="footer-bottom">
-            <span class="copyright">&copy; 2024 Hermansyah Adika Putra</span>
-            <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
+                <div class="marquee-container">
+                    <div class="marquee-wrapper">
+                        <span class="marquee-item">LET'S WORK TOGETHER — GET IN TOUCH —&nbsp;</span>
+                    </div>
+                </div>
 
+                <section id="work" class="selected-works">
+                    <div class="section-header">
+                        <span class="label">Selected Works</span>
+                        <span class="label">(2023 — 2024)</span>
+                    </div>
+
+                    <a href="project.html" class="project-row">
+                        <div class="project-info">
+                            <span class="project-name">01/ Beermut</span>
+                            <span class="project-type">Brand Identity & Packaging</span>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="project.html" class="project-row">
+                        <div class="project-info">
+                            <span class="project-name">02/ Body Om</span>
+                            <span class="project-type">Packaging Design</span>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="project.html" class="project-row">
+                        <div class="project-info">
+                            <span class="project-name">03/ Fapro</span>
+                            <span class="project-type">Web Design & Development</span>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                </section>
+            </main>
+
+            <footer id="contact">
+                <div class="footer-content">
+                    <div class="footer-cta-wrapper">
+                        <a href="mailto:hermansyah.ap@gmail.com" class="footer-cta reveal-text">LET'S
+                            WORK<br>TOGETHER</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <span>&copy; 2024</span>
+                        <span>HERMANSYAH ADIKA PUTRA</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="magnetic-link">INSTAGRAM</a>
+                        <a href="#" class="magnetic-link">LINKEDIN</a>
+                        <a href="#" class="magnetic-link">TWITTER</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- End Smooth Content -->
+    </div> <!-- End Smooth Wrapper -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 
